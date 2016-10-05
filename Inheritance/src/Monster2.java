@@ -6,8 +6,7 @@ public abstract class Monster2
 	protected int power;
 	protected int lives;
 
-	public abstract void bearsYoung();
-
+	public abstract void moves();
 	public void eats()
 		{
 		System.out.println("The " + name + " eats " + food + " for power.");
@@ -15,7 +14,12 @@ public abstract class Monster2
 	
 	public void attacks()
 		{
-		System.out.println("The " + name +  "'s attack is " + attack + ".");
+		System.out.println("The " + name +  " attacks with " + attack + ".");
 		}
+	public void stregnth()
+		{
+		System.out.println("The "+name+" has "+ lives+" lives and a power of "+power );
+		}
+	
 
 	}
